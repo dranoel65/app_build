@@ -33,11 +33,11 @@ jobs:
             sudo apt-get install s3cmd
             s3cmd --configure
 
-        - name: S3cmd configure
-          uses: s3cmd-actions/s3cmd@v1
-          with:
-            Access Key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-            Secret Key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        #- name: S3cmd configure
+        #  uses: s3cmd-actions/s3cmd@v1
+        #  with:
+        #    Access Key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        #    Secret Key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         
         - name: Set up S3cmd cli tool
           uses: s3-actions/s3cmd@v1.1
